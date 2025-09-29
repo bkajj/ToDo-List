@@ -19,7 +19,7 @@ The tool supports user configuration, validation of input, and color-coded task 
 ## Usage
 ```bash
 ./todo.sh [options]
-```bash
+```
 ## Options
 ```bash
   -f <file>                             Load tasks from a specific file.
@@ -35,7 +35,7 @@ The tool supports user configuration, validation of input, and color-coded task 
   -u <file>                             Set a default task file (saved in config).
   -e <file>                             Export tasks to the specified file.
   -h                                    Display this help message.
-```bash
+```
 ## Examples
 ```bash
 # Add a new task with high priority and due date
@@ -52,7 +52,7 @@ The tool supports user configuration, validation of input, and color-coded task 
 
 # Export tasks to a text file
 ./todo.sh -b -p -e export.txt
-```bash
+```
 ## Implementation details
 
 Bash is used for CLI parsing, configuration handling, and task filtering.
@@ -60,4 +60,4 @@ Perl module (todo.pm) manages data validation, file I/O, and formatted output.
 Tasks are stored in a simple semicolon-separated CSV file with fields:
 ```bash
 id;task;priority;date;done
-```bash
+```
