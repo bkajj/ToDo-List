@@ -1,10 +1,8 @@
-# todo.sh
+# ToDo-List
 
 A lightweight command-line tool written in **Bash** and **Perl** for managing to-do lists.  
 It allows you to add, remove, complete, sort, and export tasks with user-defined priorities and due dates.  
 The tool supports user configuration, validation of input, and color-coded task display directly in the terminal.
-
----
 
 ## Features
 - Add, remove, and complete tasks with unique IDs  
@@ -13,8 +11,6 @@ The tool supports user configuration, validation of input, and color-coded task 
 - Export tasks to a text file  
 - User-specific configuration for a default task file  
 - Color-coded priority display (`red = high`, `blue = medium`, `green = low`)  
-
----
 
 ## Usage
 ```bash
@@ -55,9 +51,9 @@ The tool supports user configuration, validation of input, and color-coded task 
 ```
 ## Implementation details
 
-Bash is used for CLI parsing, configuration handling, and task filtering.
-Perl module (todo.pm) manages data validation, file I/O, and formatted output.
-Tasks are stored in a simple semicolon-separated CSV file with fields:
+Bash is used for CLI parsing, configuration handling, and task filtering.  
+Perl module (todo.pm) manages data validation, file I/O, and formatted output.  
+Tasks are stored in a simple semicolon-separated CSV file with fields:  
 ```bash
 id;task;priority;date;done
 ```
